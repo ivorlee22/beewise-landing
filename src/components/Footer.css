@@ -9,7 +9,7 @@
 
 .footer__contact {
   display: grid;
-  grid-template-columns: minmax(260px, 0.75fr) minmax(0, 1.25fr);
+  grid-template-columns: minmax(280px, 0.7fr) minmax(0, 1.3fr);
   gap: clamp(48px, 8vw, 96px);
   padding-top: 88px;
   padding-bottom: 72px;
@@ -27,7 +27,7 @@
 }
 
 .footer__heading h2 {
-  max-width: 480px;
+  max-width: 540px;
   margin-bottom: 20px;
   color: var(--text-on-indigo);
   font-size: clamp(2.2rem, 5vw, 4.25rem);
@@ -38,10 +38,10 @@
 }
 
 .footer__heading > p:last-child {
-  max-width: 480px;
+  max-width: 540px;
   margin: 0;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   font-weight: 600;
 }
 
@@ -177,7 +177,7 @@
   text-align: right;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
   .footer__contact {
     grid-template-columns: 1fr;
     gap: 42px;

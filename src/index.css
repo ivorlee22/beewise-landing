@@ -73,13 +73,20 @@ p {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   text-wrap: balance;
+}
+
+h3 {
+  text-wrap: pretty;
 }
 
 p {
   text-wrap: pretty;
+}
+
+.keep-together {
+  white-space: nowrap;
 }
 
 :focus-visible {
@@ -88,7 +95,7 @@ p {
 }
 
 .container {
-  width: min(100% - 48px, 1120px);
+  width: min(100% - 48px, 1200px);
   margin-inline: auto;
 }
 
@@ -97,7 +104,7 @@ p {
 }
 
 .section-heading {
-  max-width: 760px;
+  max-width: 880px;
   margin-bottom: 40px;
 }
 
@@ -164,7 +171,7 @@ p {
 
 @media (max-width: 768px) {
   .container {
-    width: min(100% - 32px, 1120px);
+    width: min(100% - 32px, 1200px);
   }
 
   .section {

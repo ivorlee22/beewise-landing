@@ -3,10 +3,10 @@ import './Features.css';
 const FORM_URL = 'https://forms.gle/7LbAnWamxYbFEf598';
 
 const tutorChallenges = [
-  'Có bạn loay hoay khi tìm lớp đúng với thế mạnh.',
-  'Có bạn chưa biết cách tạo ấn tượng ban đầu với phụ huynh.',
-  'Có bạn từng mất thời gian vì thông tin lớp học chưa rõ ràng.',
-  'Có bạn có kinh nghiệm tốt nhưng chưa có nơi phù hợp để thể hiện năng lực của mình.',
+  'Có bạn loay hoay khi tìm lớp đúng với thế\u00A0mạnh.',
+  'Có bạn chưa biết cách tạo ấn tượng ban\u00A0đầu với phụ\u00A0huynh.',
+  'Có bạn từng mất thời gian vì thông tin lớp\u00A0học chưa rõ ràng.',
+  'Có bạn có kinh nghiệm tốt nhưng chưa có nơi phù hợp để thể hiện năng\u00A0lực của mình.',
 ];
 
 const tutorGroups = [
@@ -42,12 +42,12 @@ const Features = () => (
       <div className="container">
         <div className="section-heading">
           <h2 className="section-title" id="stories-title">
-            Vì sao BeeWise rất cần những chia sẻ trải nghiệm của bạn?
+            Vì sao BeeWise rất cần những chia sẻ trải&nbsp;nghiệm của bạn?
           </h2>
           <p className="section-lead">
             Gia sư không chỉ đơn giản là tìm một lớp để dạy, mà còn là làm sao
             để xây dựng niềm tin, tìm sự phù hợp và vượt qua những khó khăn để
-            kết nối với phụ huynh, học sinh.
+            kết nối với phụ&nbsp;huynh, học&nbsp;sinh.
           </p>
         </div>
 
@@ -79,7 +79,7 @@ const Features = () => (
       <div className="container">
         <div className="section-heading">
           <h2 className="section-title" id="audience-title">
-            Gia sư nào có thể tham gia phỏng vấn cùng BeeWise?
+            Gia sư nào có thể tham gia phỏng vấn cùng&nbsp;BeeWise?
           </h2>
           <p className="section-lead">
             Dù bạn đã có nhiều kinh nghiệm hay chỉ mới bắt đầu, góc nhìn của bạn
@@ -117,11 +117,11 @@ const Features = () => (
           <div className="signup__content">
             <p className="eyebrow signup__eyebrow">Đăng ký tham gia phỏng vấn</p>
             <h2 className="signup__title" id="signup-title">
-              Bạn sẵn sàng chia sẻ câu chuyện làm gia sư của mình chứ?
+              Bạn sẵn sàng chia sẻ câu chuyện làm gia&nbsp;sư của mình chứ?
             </h2>
             <p>
               Hãy nhấn nút tham gia bên dưới để BeeWise có thể hiểu hơn về trải
-              nghiệm của bạn và sắp xếp một buổi trò chuyện nhỏ vào thời gian
+              nghiệm của bạn và sắp xếp một buổi trò&nbsp;chuyện nhỏ vào thời gian
               phù hợp nhất.
             </p>
             <p>
