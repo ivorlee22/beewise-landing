@@ -1,26 +1,26 @@
-import './Footer.css';
+import "./Footer.css";
 
 const projectDetails = [
-  { label: 'Nhóm thực hiện', value: 'BeeWise' },
-  { label: 'Dự án', value: 'Cộng đồng gia sư' },
-  { label: 'Người phụ trách', value: 'Nguyễn Thị Tuyết Hương' },
+  { label: "Nhóm thực hiện", value: "BeeWise" },
+  { label: "Dự án", value: "Cộng đồng gia sư" },
+  { label: "Người phụ trách", value: "Nguyễn Thị Tuyết Hương" },
 ];
 
 const contactChannels = [
   {
-    label: 'Email',
-    value: 'huongntt1221@gmail.com',
-    href: 'mailto:huongntt1221@gmail.com',
+    label: "Email",
+    value: "huongntt1221@gmail.com",
+    href: "mailto:huongntt1221@gmail.com",
   },
   {
-    label: 'Zalo/Số điện thoại',
-    value: '0799 670 750',
-    href: 'tel:+84799670750',
+    label: "Zalo/Số điện thoại",
+    value: "0799 670 750",
+    href: "tel:+84799670750",
   },
   {
-    label: 'Facebook/Fanpage',
-    value: 'facebook.com/kaoriismee',
-    href: 'https://www.facebook.com/kaoriismee',
+    label: "Facebook/Fanpage",
+    value: "facebook.com/kaoriismee",
+    href: "https://www.facebook.com/kaoriismee",
     external: true,
   },
 ];
@@ -54,8 +54,8 @@ const Footer = () => (
               <dd>
                 <a
                   href={channel.href}
-                  target={channel.external ? '_blank' : undefined}
-                  rel={channel.external ? 'noreferrer' : undefined}
+                  target={channel.external ? "_blank" : undefined}
+                  rel={channel.external ? "noreferrer" : undefined}
                 >
                   {channel.value}
                   <span aria-hidden="true">↗</span>
@@ -83,7 +83,7 @@ const Footer = () => (
         </div>
       </div>
       <p className="footer__copyright">
-        © {new Date().getFullYear()} BeeWise. Mọi quyền được bảo lưu.
+        © {new Date().getFullYear()} BeeWise. All rights reserved.
       </p>
     </div>
   </footer>

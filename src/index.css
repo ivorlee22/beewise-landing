@@ -197,3 +197,116 @@ p {
     transition-duration: 0.01ms !important;
   }
 }
+
+.hero,
+.stories,
+.audience,
+.signup,
+.thanks {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.hero::before,
+.stories::before,
+.audience::before,
+.signup::before,
+.thanks::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  filter: blur(1.4px) saturate(1.08);
+}
+
+.hero > .container,
+.about > .container,
+.stories > .container,
+.audience > .container,
+.signup > .container,
+.thanks > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero::before {
+  background-image: url('/stickers/3.png'), url('/stickers/7.png'), url('/stickers/11.png');
+  background-position: right 7vw top 12%, left -42px bottom 16%, 53% 55%;
+  background-size: clamp(118px, 12vw, 190px), clamp(120px, 13vw, 210px), clamp(84px, 8vw, 132px);
+}
+
+
+.stories::before {
+  background-image: url('/stickers/1.png'), url('/stickers/5.png'), url('/stickers/9.png');
+  background-position: right 9vw top 8%, left 4vw bottom 10%, 48% 42%;
+  background-size: clamp(92px, 9vw, 152px), clamp(112px, 12vw, 190px), clamp(72px, 7vw, 118px);
+}
+
+.audience::before {
+  background-image: url('/stickers/2.png'), url('/stickers/6.png'), url('/stickers/11.png');
+  background-position: left -30px top 18%, right 5vw top 54%, 52% 88%;
+  background-size: clamp(104px, 10vw, 172px), clamp(96px, 10vw, 160px), clamp(70px, 7vw, 112px);
+}
+
+.signup::before {
+  background-image: url('/stickers/7.png'), url('/stickers/3.png'), url('/stickers/10.png');
+  background-position: left 8vw top 18%, right 3vw bottom 10%, 48% 72%;
+  background-size: clamp(104px, 11vw, 180px), clamp(86px, 9vw, 142px), clamp(70px, 7vw, 116px);
+  opacity: 0.18;
+}
+
+.thanks::before {
+  background-image: url('/stickers/5.png'), url('/stickers/8.png'), url('/stickers/4.png');
+  background-position: right 7vw top 14%, left 8vw bottom 8%, 50% 48%;
+  background-size: clamp(92px, 10vw, 160px), clamp(82px, 9vw, 146px), clamp(66px, 7vw, 108px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero::before,
+  .stories::before,
+  .signup::before {
+    animation: sticker-bg-drift 9s ease-in-out infinite;
+  }
+
+  .audience::before,
+  .thanks::before {
+    animation: sticker-bg-drift-alt 10s ease-in-out infinite;
+  }
+}
+
+@keyframes sticker-bg-drift {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 -12px;
+  }
+}
+
+@keyframes sticker-bg-drift-alt {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 12px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero::before,
+  .stories::before,
+  .audience::before,
+  .signup::before,
+  .thanks::before {
+    opacity: 0.14;
+    background-size: 92px, 112px, 72px;
+  }
+}
