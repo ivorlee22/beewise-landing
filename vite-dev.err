@@ -1,4 +1,0 @@
-8:15:55 PM [vite] (client) [console.error] [vite] SyntaxError: The requested module '/src/components/About.jsx?t=1781874955177' does not provide an export named 'default'
-8:15:55 PM [vite] (client) [console.error] [vite] Failed to reload /src/App.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
-8:15:55 PM [vite] (client) [console.error] [vite] SyntaxError: The requested module '/src/components/About.jsx?t=1781874955177' does not provide an export named 'default'
-8:15:55 PM [vite] (client) [console.error] [vite] Failed to reload /src/App.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
